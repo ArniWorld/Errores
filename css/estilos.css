@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    overflow: hidden;
+    background: url(../img/banner.jpg)
+}
+
+.barra {
+    background: rgba(0, 0, 0, .4);
+    ;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo a img {
+    width: 50px;
+    height: auto;
+}
+
+.imgProd {
+    margin-top: 35px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgProd .img {
+    width: 30%;
+    margin: 3px;
+    overflow: hidden;
+}
+
+.imgProd .img img {
+    width: 100%;
+    height: 200px;
+}
+
+.imgProd .img img:hover {
+    transform: scale(1.1);
+    transition: all .6s ease-in-out;
+}
+
+.cardTargetas {
+    display: flex;
+    margin-top: 60px;
+}
+
+.cardTargetas .imgCard {
+    width: 45%;
+}
+
+.cardTargetas .imgCard img {
+    width: 100%;
+}
+
+.textCard {
+    margin-left: 30px;
+}
+
+.nav-link {
+    color: white!important;
+}
+
+.nav-link:hover {
+    color: #ccc!important;
+}
+
+.footer {
+    height: 50px;
+    background: black;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.footer footer p {
+    line-height: 50px;
+    color: lightgray;
+}
+
+.nombre {
+    position: absolute;
+    bottom: 120px;
+    left: 75px!important;
+    text-align: center;
+    background: rgba(0, 0, 0, .8);
+    ;
+    width: 50%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.titulo {
+    color: lightyellow;
+    margin: 20px;
+}
+
+.matambre {
+    color: white;
+    font-size: 3rem;
+    font-family: serif;
+    display: block;
+}
+
+.animacion {
+    display: none;
+    animation: animacion 7s ease 2s infinite;
+    margin-top: 25px;
+}
+
+.animacion2 {
+    display: none;
+}
+
+.animacion2 img {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 100px;
+}
+
+@keyframes animacion {
+    0% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: 50%;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+.animacion img {
+    width: 150px;
+}
+
+
+/*CARDS*/
+
+.card img {
+    height: 200px;
+}
+
+.imagenP {
+    position: relative;
+}
+
+.imagenP img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.imagenP .textoP {
+    position: absolute;
+    left: 40%;
+    top: 25%;
+    font-weight: bold;
+    font-family: 'Fuggles', cursive;
+}
+
+@media (max-width:768px) {
+    .imgProd .img {
+        width: 45%;
+        height: auto;
+    }
+    .cardTargetas .imgCard {
+        width: 45%;
+    }
+    .textCard {
+        width: 45%;
+    }
+    .nombre {
+        bottom: 75px;
+        width: 80%;
+        height: auto;
+        border-radius: 15px;
+    }
+    .titulo {
+        font-size: 1.8rem;
+    }
+    .matambre {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:576px) {
+    .imgProd .img {
+        width: 80%;
+        height: auto;
+    }
+    .cardTargetas {
+        display: flex;
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardTargetas .imgCard {
+        width: 80%;
+    }
+    .textCard {
+        margin-top: 20px;
+    }
+    .nombre {
+        left: 15px!important;
+        margin: 0 auto;
+        bottom: 25px;
+        width: 90%;
+        height: auto;
+        border-radius: 15px;
+    }
+    .titulo {
+        font-size: 1.5rem;
+    }
+    .matambre {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.8rem!important;
+    }
+    .animacion img {
+        width: 100px;
+    }
+    .imagenP img {
+        width: 80%;
+    }
+}
